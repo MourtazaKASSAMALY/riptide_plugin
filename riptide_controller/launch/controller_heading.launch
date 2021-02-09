@@ -1,0 +1,12 @@
+<launch>
+
+	<node pkg="riptide_controller" name="Drivers" type="Drivers.py" output="screen"/>
+
+	<node pkg="riptide_controller" name="Observer" type="Observer.py" output="screen"/>
+
+	<arg name="heading"/>
+	<arg name="depth"/>
+	<node pkg="riptide_controller" name="Controller" type="Controller_heading.py" output="screen" args="$(arg heading) $(arg depth)"/>
+
+</launch>
+

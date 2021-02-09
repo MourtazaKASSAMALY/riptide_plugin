@@ -1,0 +1,22 @@
+Launching ROS Controler for Riptide
+
+controller_waypoint.launch : work only when there is no gazebo (file Drivers.py simulate dummy ROS message from sensors)
+
+	roslaunch controller_waypoint.launch json:=path_to_jsonfile/jsonfile.json
+
+controller_heading.launch : work only when there is no gazebo (file Drivers.py simulate dummy ROS message from sensors)
+
+	roslaunch controller_heading.launch heading:=headingInRadians depth:=depthInMetersWithNegativeValue
+
+controller_waypoint_without_drivers.launch : work when there is gazebo (don't launch Drivers.py)
+
+	roslaunch controller_waypoint_without_drivers.launch json:=path_to_jsonfile/jsonfile.json
+
+controller_heading_without_drivers.launch : work when there is gazebo (don't launch Drivers.py)
+
+	roslaunch controller_waypoint_without_drivers.launch heading:=headingInRadians depth:=depthInMetersWithNegativeValue
+
+
+
+
+

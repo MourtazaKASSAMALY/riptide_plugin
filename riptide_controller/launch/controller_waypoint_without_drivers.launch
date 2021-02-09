@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="riptide_controller" name="Observer" type="Observer.py" output="screen"/>
+	<node pkg="riptide_controller" name="Controleur" type="Controller_waypoint.py" output="screen" />
+
+	<arg name="json"/>
+	<node pkg="riptide_controler" name="Planner" type="mission.py" output="screen" args="$(arg json)"/>
+</launch>
+

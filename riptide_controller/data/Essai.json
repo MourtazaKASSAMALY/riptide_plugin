@@ -1,0 +1,136 @@
+{
+    "type": "Mission",
+    "id": 30,
+    "name": "Mission",
+    "phases": [
+        
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_01",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_2.0",
+                "latitude": 48.35351212625408,
+                "longitude": -4.5484533467912485
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_02",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_2.1",
+                "latitude": 48.35351212625408,
+                "longitude": -4.5484533467912485
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_03",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_2.2",
+                "latitude": 48.351540908879954,
+                "longitude": -4.545758008749073
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_04",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_2.3",
+                "latitude": 48.349247860097805,
+                "longitude": -4.545436177341052
+            }
+        },
+        
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_05",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_9.0.0",
+                "latitude": 48.34675783100802,
+                "longitude": -4.546430114672949
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_06",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_9.0.1",
+                "latitude": 48.348869849623156,
+                "longitude": -4.5501450045585035
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_07",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_9.0.2",
+                "latitude": 48.352301879872755,
+                "longitude": -4.552596454736788
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_08",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_9.0.3",
+                "latitude": 48.35267902605403,
+                "longitude": -4.5527095985911705
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_09",
+            "depth": 5,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_9.0.4",
+                "latitude": 48.35267902605403,
+                "longitude": -4.5527095985911705
+            }
+        }
+        
+    ]
+}

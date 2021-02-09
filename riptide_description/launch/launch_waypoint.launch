@@ -1,0 +1,23 @@
+<launch>    
+
+    <include file="$(find uuv_gazebo_worlds)/launch/ocean_waves.launch">
+    </include>
+
+    <include file="$(find riptide_description)/launch/upload.launch">
+    	<arg name="mode" value="default"/>
+    	<arg name="x" value="0"/>
+	<arg name="y" value="0"/>
+	<arg name="z" value="-1"/>
+	<arg name="yaw"	value="0."/>
+	<arg name="namespace" value="riptide"/>
+    </include>
+	
+    <node name="SimulationBridge" pkg="riptide_description" type="remap.py" output="screen">
+    </node>
+	
+    <include file="$(find riptide_controller)/launch/controller_waypoint_without_drivers.launch">
+        <arg name="json" value="/home/mourtaza/workspace_riptide/src/riptide_controller/data/Essai.json"/>
+    </include>
+
+</launch>
+

@@ -1,0 +1,49 @@
+{
+    "type": "Mission",
+    "id": 30,
+    "name": "Mission",
+    "phases": [
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_01",
+            "depth": 10.0,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_1.0",
+                "latitude": 48.39339016396755,
+                "longitude": -4.425006385433993
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_01",
+            "depth": 10.0,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_1.1",
+                "latitude": 48.39234858212328,
+                "longitude": -4.420881543595493
+            }
+        },
+        {
+            "type": "Waypoint",
+            "id": 15,
+            "name": "Waypoints_01",
+            "depth": 10.0,
+            "speed": 2.0,
+            "point": {
+                "type": "Point2D",
+                "id": 1,
+                "name": "P_1.2",
+                "latitude": 48.38957092629913,
+                "longitude": -4.4204167726841135
+            }
+        }
+    ]
+}
