@@ -21,6 +21,7 @@ https://uuvsimulator.github.io/installation/
 ``` bash
 $ cd ~/workspace_riptide/src
 $ git clone https://github.com/MourtazaKASSAMALY/riptide_plugin.git
+$ cd ~/workspace_riptide
 $ catkin_make
 ```
 
