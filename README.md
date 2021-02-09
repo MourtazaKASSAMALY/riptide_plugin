@@ -35,11 +35,17 @@ $ roslaunch uuv_gazebo_worlds ocean_waves.launch
 
 1.2 - Faire apparaître le Riptide dans la simulation : 
 
-```
-bash $ roslaunch riptide_description upload.launch
+```bash
+$ roslaunch riptide_description upload.launch
 ```
 
-1.3 - Lancer un contrôleur (en cap ou en waypoint) :
+1.3 - Lancer l'interface simulation/contrôleur :
+
+```bash
+$ rosrun riptide_description remap.py
+```
+
+1.4 - Lancer un contrôleur (en cap ou en waypoint) :
 
 ```bash
 $ roslaunch riptide_controller controller_heading_without_drivers.launch heading:=desired_heading depth:=desired_depth
