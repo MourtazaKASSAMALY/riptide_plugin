@@ -50,7 +50,7 @@ class Riptide(AUV):
         ## Controller parameters
         k_roll = 1
         k_pitch = 1.
-        k_yaw = 10
+        k_yaw = 1
 
         ## SPEED CONTROL
         u0 = sqrt(self.p2/self.p1)*speed  # action on thruster
@@ -61,7 +61,7 @@ class Riptide(AUV):
         Ed = eulerderivative(phi, theta, psi)
 
         err = array([[sawtooth(0 - phi)],
-                     [(depth-z)*0.1],  # max(0.1, min(0.1, (+-)(depth-z)) - theta
+                     [(depth-z)/abs(depth-z) * max(0.5, (depth-z)) - theta],  # max(0.1, min(0.1, (+-)(depth-z)) - theta
                      [sawtooth(heading-psi)]])
 
         w_angles = matmul(matmul(inv(Ed), K), err)   # wanted rotational velocities
@@ -72,6 +72,7 @@ class Riptide(AUV):
         u2 = arcsin(sinU[1, 0])
         u3 = arcsin(sinU[2, 0])
 
+        print(depth-z, u2, u3)
         U = array([[u0, u1, u2, u3]]).T
         U[1:,:] = U[1:,:].clip(-0.35, 0.35)
 

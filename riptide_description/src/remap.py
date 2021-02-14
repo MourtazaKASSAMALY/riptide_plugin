@@ -69,7 +69,7 @@ def callback_pressure(msg):
 def callback_esc(msg):  # receive thruster input from controller and republish it to Gazebo
 	msgstamped = FloatStamped()
 	msgstamped.header.stamp = rospy.Time.now()
-	msgstamped.data = float(msg.data)
+	msgstamped.data = float(msg.data) * 100  # amplify the linear speed for Gazebo (value of 100 hundred needed to actually move forward)
 	pub_thruster.publish(msgstamped)
 
 def callback_servo1(msg):  # receive fin0 input from controller and republish it to Gazebo

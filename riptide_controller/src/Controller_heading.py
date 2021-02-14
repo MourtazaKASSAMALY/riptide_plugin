@@ -147,7 +147,7 @@ class Control(object):
             #Publish the command
             u0, u1, u2, u3 = Float32(), Float32(), Float32(), Float32()
 
-            u0.data = u[0]*200  # amplify the linear speed for Gazebo (value of 100 hundred needed to actually move forward)
+            u0.data = u[0]
             u1.data = u[1]
             u2.data = u[2]
             u3.data = u[3]

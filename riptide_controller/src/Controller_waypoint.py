@@ -183,7 +183,7 @@ class Control(object):
             # Publish the command
             u0, u1, u2, u3 = Float32(), Float32(), Float32(), Float32()
 
-            u0.data = u[0][0]*200
+            u0.data = u[0][0]
             u1.data = u[1][0]
             u2.data = u[2][0]
             u3.data = u[3][0]
